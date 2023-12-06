@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ecsys="$(cat /boot/config-$(uname -r) | grep CONFIG_ACPI_EC)"
+
+if [ "$ecsys" = "# CONFIG_ACPI_EC_DEBUGFS is not set" ]; then
+        echo "ec_sys is not present on the kernel - Installing";
+        cd /usr/share/ec_sys-dkms;
+        make clean;
+        make dkmsinstall;
+fi
+

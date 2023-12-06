@@ -1,0 +1,5 @@
+ec-sys-dkms (0.0.0) unstable; urgency=low
+
+  * Detects if ec_sys is missing from the kernel
+
+ -- Name <email@email.com>  Sat, 2 Dec 2023 08:01:52 +0000

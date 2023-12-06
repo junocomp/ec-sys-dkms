@@ -1,0 +1,13 @@
+Source: ec-sys-dkms
+Section: admin
+Priority: optional
+Build-Depends: debhelper
+Maintainer: Name <email@email.com>
+
+Package: ec-sys-dkms
+Section: base
+Priority: optional
+Depends: dkms, make, linux-headers-amd64, bc
+Homepage: https://github.com/junocomp/ec-sys-dkms
+Architecture: all
+Description: ec_sys module
